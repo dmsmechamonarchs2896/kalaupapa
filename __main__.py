@@ -1,4 +1,4 @@
-# MonikaConfig
+# Kalaupapa
 # Created by marquiskurt
 # robot-octodollop-fork (C) 2018 MechaMonarchs Team.
 # Licensed under Apache 2.0 License
@@ -28,7 +28,7 @@ if __name__ == "__main__":
     monika = MonikaConfig()
     engine = QQmlApplicationEngine()
     engine.rootContext().setContextProperty('monika', monika)
-    engine.load('monika-2.qml')
+    engine.load('mainUI.qml')
 
     engine.quit.connect(app.quit)
 

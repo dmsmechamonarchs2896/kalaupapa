@@ -23,7 +23,7 @@ ApplicationWindow {
         id: bar
         y: 0
         height: 52
-        currentIndex: 0
+        currentIndex: 1
         anchors.right: parent.right
         anchors.rightMargin: 0
         anchors.left: parent.left
@@ -45,7 +45,7 @@ ApplicationWindow {
 
         TabButton {
             id: debuggingTab
-            text: qsTr("Third Eye")
+            text: qsTr("Debugging")
         }
     }
 
@@ -198,45 +198,9 @@ ApplicationWindow {
 
                 Row {
                     id: row2
+                    y: 0
                     width: 200
                     height: 400
-
-                    Column {
-                        id: column1
-                        width: 200
-                        height: 400
-                        anchors.top: parent.top
-                        anchors.topMargin: 0
-
-                        Label {
-                            id: text3
-                            x: 16
-                            text: qsTr("Matches")
-                            font.pixelSize: 24
-                        }
-
-                        RadioButton {
-                            id: radioButton
-                            x: 16
-                            text: qsTr("Practice")
-                        }
-
-                        RadioButton {
-                            id: radioButton1
-                            x: 16
-                            text: qsTr("Qualitication")
-                        }
-
-                        RadioButton {
-                            id: radioButton2
-                            x: 16
-                            text: qsTr("Competitive")
-
-                            ToolTip.visible: hovered
-                            ToolTip.delay: 1000
-                            ToolTip.text: qsTr("Includes quarterfinal, semifinal, and final.")
-                        }
-                    }
 
                 }
 
@@ -244,48 +208,6 @@ ApplicationWindow {
                     id: row3
                     width: 200
                     height: 400
-
-                    Column {
-                        id: column2
-                        width: 200
-                        height: 400
-                        anchors.top: parent.top
-                        anchors.topMargin: 0
-                        transformOrigin: Item.Center
-
-                        Label {
-                            id: text4
-                            x: 16
-                            text: qsTr("Alliances")
-                            font.pixelSize: 24
-                        }
-
-                        RadioButton {
-                            id: radioButton3
-                            x: 16
-                            text: qsTr("Red")
-                        }
-
-                        RadioButton {
-                            id: radioButton4
-                            x: 16
-                            text: qsTr("Blue")
-                        }
-                    }
-                }
-
-                Row {
-                    id: row4
-                    width: 200
-                    height: 400
-
-                    Column {
-                        id: column3
-                        width: 200
-                        height: 400
-                        anchors.top: parent.top
-                        anchors.topMargin: 0
-                    }
                 }
             }
         }
